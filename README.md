@@ -1,76 +1,37 @@
-# The Ultimate Java and Spring Boot Mastery Roadmap
+URL Shortener – Project Description
+The URL Shortener is a full-stack web application designed to simplify the process of sharing lengthy URLs by converting them into short, manageable links. Built using Java Spring Boot for the backend and React.js for the frontend, this project demonstrates seamless integration of modern web technologies to deliver a clean and efficient user experience.
 
-Welcome to your one-stop-shop for mastering Java and Spring Boot! This repository offers a comprehensive learning experience with high-quality resources and community support. Dive into over 150+ hours of premium content, with everything you need to excel at Java and Spring Boot development.
+Users can input long URLs through a responsive and interactive React-based frontend. Upon submission, the request is sent to the backend via a REST API built using Spring Boot. The backend then processes the URL, generates a unique short code, stores the mapping in a database (such as MySQL or H2), and returns the shortened link to the user. When the short link is accessed, the system decodes the short code, fetches the original URL from the database, and redirects the user to the intended destination.
 
-## 🎓 Learning Roadmap
+The system supports error handling (e.g., invalid URLs, non-existent short codes) and can optionally be extended to include analytics features such as click tracking, expiration dates for links, or user authentication for managing personal links.
 
-Most of the courses below are available in **Udemy For Business**, so if you have subscription - you can get FREE access.
-Here’s a structured path to enhance your skills with detailed courses available:
+Core Features:
+Generate unique short URLs for any valid long URL
 
-1. **[Spring Boot By Building Complex Projects Step by Step](https://link.embarkx.com/spring-boot) (70+ Hours of Content)**
-2. **[Master Spring Boot Microservices](https://link.embarkx.com/microservices) (23+ Hours of Content)**
-3. **[Learn Java with 60+ Hours of Content](http://link.embarkx.com/java) (60+ Hours of Content)**
-4. **[Master Spring Security with React JS + OAuth2](https://link.embarkx.com/spring-security) (34+ Hours of Content)**
-5. **[Master IntelliJ IDEA](http://link.embarkx.com/intellij) (3+ Hours of Content)**
+Redirect users to the original URL upon visiting the short URL
 
+Responsive user interface built using React.js
 
-## 🌟 With All Our Courses You Gain Access To
+RESTful backend using Java Spring Boot
 
-- 📝 **Notes:** Detailed and downloadable notes to accompany each lesson.
-- 💻 **Source Code:** Full access to the source code used in the tutorials.
-- 🤔 **Doubt Solving:** Responsive instructor and community support.
-- 🎥 **High-Quality HD Videos:** Easy to understand, high-definition video tutorials.
-- 🔄 **Free Lifetime Updates:** Continuous updates to course content at no extra cost.
+Basic URL validation and error handling
 
-## 📚 Why Choose This Mastery Series?
+Database integration for persistent storage of URL mappings
 
-With this series, you're not just learning; you're preparing to dominate the field of Java and Spring Boot development. Our structured learning path ensures that you build your skills progressively, with each course designed to build on the knowledge gained from the previous one.
+Technology Stack:
+Frontend: React.js, Axios, Tailwind CSS or Bootstrap
 
-### Join Us Now!
+Backend: Java, Spring Boot, Spring Web
 
-Start your journey today to become a master at Java and Spring Boot. Our community and expert instructors are here to support your learning every step of the way. **Enroll and start building your future, today!**
+Database: MySQL, PostgreSQL, or H2 (in-memory for testing)
 
+Tools: Postman (API testing), Git & GitHub, Maven
 
+Use Cases:
+Simplifying long URLs for easy sharing on social media
 
+Creating branded or customized short links
 
+Tracking the number of times a short link is accessed
 
-# Usage Policy for Course Materials
-
-## Instructor Information
-
-**Instructor:** Faisal Memon  
-**Company:** [EmbarkX.com](http://www.embarkx.com)
-
-## Policy Overview
-
-This document outlines the guidelines and restrictions concerning the use of course materials provided by EmbarkX, including but not limited to PDF presentations, code samples, and video tutorials.
-
-### 1. Personal Use Only
-
-The materials provided in this course are intended for **your personal use only**. They are to be used solely for the purpose of learning and completing this course.
-
-### 2. No Unauthorized Sharing or Distribution
-
-You are **not permitted** to share, distribute, or publicly post any course materials on any websites, social media platforms, or other public forums without prior written consent from the instructor.
-
-### 3. Intellectual Property
-
-All course materials are protected by copyright laws and are the intellectual property of Faisal Memon and EmbarkX. Unauthorized use, reproduction, or distribution of these materials is **strictly prohibited**.
-
-### 4. Reporting Violations
-
-If you become aware of any unauthorized sharing or distribution of course materials, please report it immediately to [embarkxofficial@gmail.com](mailto:embarkxofficial@gmail.com).
-
-### 5. Legal Action
-
-We reserve the right to take legal action against individuals or entities found to be violating this usage policy.
-
-## Thank You
-
-Thank you for respecting these guidelines and helping us maintain the integrity of our course materials.
-
-## Contact Information
-
-- **Email:** [embarkxofficial@gmail.com](mailto:embarkxofficial@gmail.com)
-- **Website:** [www.embarkx.com](http://www.embarkx.com)
-
+This project not only improves usability for daily web users but also serves as a valuable learning experience in full-stack web development, RESTful API design, and deployment of microservices.
